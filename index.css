@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@300&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow:hidden;
+    font-family: 'Poppins', sans-serif; 
+}
+nav{
+    width:100vw;
+    height:4rem;
+    display:flex;
+    align-items:baseline;
+    gap:25rem;
+    background-color:#596484;
+}
+.logo{
+    margin-top:1.2rem;
+    margin-left:43%;
+}
+.nav-btns{
+    margin-top:1.2rem;
+    float:right;
+    display:flex;
+    gap:2rem;
+    margin-right:5%;
+}
+.home:active{
+    transform: scale(1.5);
+}
+.home:hover{
+    background-color:#93A5DF ;
+}  
+.about:active{
+    transform: scale(1.5);
+}
+.about:hover{
+    background-color:#93A5DF ;
+} 
+a{
+    text-decoration:none;
+    color:white;
+    padding:1rem;
+}
+.wrapper{
+   width:100vw;
+   height:100vh;
+   background-color: #1C1B1C;
+   position: relative;
+}
+.bg-video{
+    height:100vh;
+    width:100vw;
+    margin-left:10rem;
+}
+video{
+    object-fit:cover; 
+    z-index:-1;
+    height:100%;
+    width:100%;
+} 
+.wrapper .text-area{
+    opacity: 0;
+    z-index: -999;
+    position: absolute; 
+    height:100%;
+    width:95%;
+}
+.para{
+    color: #646669;
+}
+.typing-box{ 
+    /* margin-top:5rem;
+    margin-left:5rem; */
+    /* z-index:2;
+    background-color:#B1C2DF;
+    height:30rem;
+    width:30rem; */
+    background-color: #B0BEE1;
+    opacity:0.5;
+    position:absolute;
+    top:7rem;
+    left:4rem;
+    height:25rem;
+    width:30rem;
+    border:2px solid black;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:10px -10px 5px 3px #93A5DF;
+
+} 
+.para p{
+    padding:1rem;
+    background-color: #EEEDE7;
+    height:15rem;
+    width:95%;
+    margin:1rem;
+    border:solid black;
+    letter-spacing: 1px;
+}
+::selection
+{  /*text and bg color for selected text*/ 
+    color: #fff;
+    background: #007acc;
+} 
+.para p.span.correct{
+    color:black;
+}
+.para p.span.incorrect{
+    color: #ca4754;
+}
+ .para p span.active::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #007acc;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+} 
+.details{
+    display:flex;
+    padding:2rem;
+}
+ul{
+    list-style:none;
+    margin-right:2rem;
+    display:flex;
+    gap:2rem;
+}
+button:active{
+    transform: scale(0.89);
+}
+button:hover{
+    background-color:#93A5DF ;
+}   
